@@ -181,7 +181,7 @@ on init
 
     # VideoCodec
     mknod /dev/Vcodec c 160 0
-    chmod 0660 /dev/Vcodec
+    chmod 0666 /dev/Vcodec
     chown system media /dev/Vcodec
 
     # MJC
