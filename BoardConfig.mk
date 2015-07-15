@@ -76,7 +76,7 @@ BOARD_HAVE_BLUETOOTH_MTK := true
 BOARD_BLUETOOTH_DOES_NOT_USE_RFKILL := true
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/kingzone/k1_turbo/bluetooth
 
-ifeq ($(RECOVERY_VARIANT=twrp), )
+#ifeq ($(RECOVERY_VARIANT=twrp), )
 # TWRP Recovery
 DEVICE_RESOLUTION := 1080x1920
 BOARD_HAS_LARGE_FILESYSTEM := true
@@ -91,12 +91,12 @@ TW_INTERNAL_STORAGE_MOUNT_POINT := "emmc"
 TW_EXTERNAL_STORAGE_PATH := "/external_sd"
 TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
 TARGET_RECOVERY_FSTAB := device/kingzone/k1_turbo/rootdir/twrp.fstab
-else
+#else
 #Cwm Recovery
-DEVICE_RESOLUTION := 1080x1920
+#DEVICE_RESOLUTION := 1080x1920
 TARGET_RECOVERY_FSTAB := device/kingzone/k1_turbo/rootdir/recovery.fstab
 BOARD_HAS_NO_SELECT_BUTTON := true
-endif
+#endif
 
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/virtual/android_usb/android0/f_mass_storage/lun%d/file"
 
