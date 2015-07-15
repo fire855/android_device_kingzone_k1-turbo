@@ -90,11 +90,11 @@ TW_INTERNAL_STORAGE_PATH := "/emmc"
 TW_INTERNAL_STORAGE_MOUNT_POINT := "emmc"
 TW_EXTERNAL_STORAGE_PATH := "/external_sd"
 TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
-TARGET_RECOVERY_FSTAB := device/kingzone/k1_turbo/rootdir/twrp.fstab
+TARGET_RECOVERY_FSTAB := device/kingzone/k1_turbo/rootdir/twrp.fstab #unuse it when building cwm
 #else
 #Cwm Recovery
 #DEVICE_RESOLUTION := 1080x1920
-TARGET_RECOVERY_FSTAB := device/kingzone/k1_turbo/rootdir/recovery.fstab
+#TARGET_RECOVERY_FSTAB := device/kingzone/k1_turbo/rootdir/recovery.fstab #unuse it when building twrp
 BOARD_HAS_NO_SELECT_BUTTON := true
 #endif
 
