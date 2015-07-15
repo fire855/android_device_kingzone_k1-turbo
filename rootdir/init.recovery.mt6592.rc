@@ -15,6 +15,8 @@ on init
 
 on fs
     setprop ro.crypto.fuse_sdcard true
+   on property:sys.powerctl=*
+   powerctl ${sys.powerctl}
 
 on boot
 # virtual sdcard daemon running as media_rw (1023)
