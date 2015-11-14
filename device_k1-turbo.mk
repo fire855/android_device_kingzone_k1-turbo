@@ -26,7 +26,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     audio.r_submix.default \
     audio.primary.mt6592 \
-    audio_policy.default
+    audio_policy.default \
+    audio.a2dp.default
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_codecs.xml:system/etc/media_codecs.xml \
     $(LOCAL_PATH)/configs/media_profiles.xml:system/etc/media_profile.xml \
