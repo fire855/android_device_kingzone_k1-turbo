@@ -113,3 +113,6 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/virtual/android_usb/android0/f_
 
 BOARD_SEPOLICY_DIRS := \
        device/kingzone/k1_turbo/sepolicy
+
++# Hack for build
+ +$(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
