@@ -14,7 +14,7 @@
 
 * Compilation
 
-        # repo init -u git://github.com/fire855/android.git -b cm-12.1
+        # repo init -u git://github.com/fire855/android.git -b cm-13.0
         
         # repo sync
         
